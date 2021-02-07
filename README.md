@@ -4,12 +4,10 @@
 
 <p align="center">
 
-[![Build Status](https://travis-ci.org/michaeldouglas/laravel-pagseguro.svg?branch=master)](https://travis-ci.org/michaeldouglas/laravel-pagseguro)
-[![Total Downloads](https://poser.pugx.org/michael/laravelpagseguro/downloads)](https://packagist.org/packages/michael/laravelpagseguro)
-[![Latest Unstable Version](https://poser.pugx.org/leaphly/cart-bundle/v/unstable.svg)](//packagist.org/packages/michael/laravelpagseguro)
-[![License](https://poser.pugx.org/leaphly/cart-bundle/license.svg)](https://packagist.org/packages/michael/laravelpagseguro)
-[![Code Climate](https://codeclimate.com/github/michaeldouglas/laravel-pagseguro/badges/gpa.svg)](https://codeclimate.com/github/michaeldouglas/laravel-pagseguro)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a358a57c8d4f4458b9d9055326f5a67c)](https://www.codacy.com/app/michaeldouglas010790/laravel-pagseguro?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=michaeldouglas/laravel-pagseguro&amp;utm_campaign=Badge_Grade)
+[![Build Status](https://travis-ci.org/lgthomazelli/laravel-pagseguro.svg?branch=master)](https://travis-ci.org/lgthomazelli/laravel-pagseguro)
+[![Total Downloads](https://poser.pugx.org/lgthomazelli/laravelpagseguro/downloads)](https://packagist.org/packages/lgthomazelli/laravelpagseguro)
+[![Latest Unstable Version](https://poser.pugx.org/leaphly/cart-bundle/v/unstable.svg)](//packagist.org/packages/lgthomazelli/laravelpagseguro)
+[![License](https://poser.pugx.org/leaphly/cart-bundle/license.svg)](https://packagist.org/packages/lgthomazelli/laravelpagseguro)
 
 </p>
 
@@ -35,7 +33,7 @@ segue URL de configuração do usuário PagSeguro:
 Abra o arquivo `composer.json` e insira a seguinte instrução:
 
     "require": {
-        "michael/laravelpagseguro": "dev-master"
+        "lgthomazelli/laravelpagseguro": "dev-master"
     }
 
 **Observação**: Para a versão 5.1 do laravel ou abaixo especifique a versão **0.4.1** ao invés de utilizar **dev-master**
@@ -47,7 +45,7 @@ Após inserir no require o `Laravel PagSeguro`, você deverá executar o comando
 
 Ou execute o comando:
 
-    composer require michael/laravelpagseguro:dev-master
+    composer require lgthomazelli/laravelpagseguro:dev-master
 
 ## Configuração do Service Provider
 
@@ -76,7 +74,7 @@ php artisan vendor:publish
 Se tudo ocorreu bem, a seguinte mensagem sera exibida:
 
 ```php
-Copied File [/vendor/michael/laravelpagseguro/src/laravel/pagseguro/Config/laravelpagseguro.php] To [/config/laravelpagseguro.php]
+Copied File [/vendor/lgthomazelli/laravelpagseguro/src/laravel/pagseguro/Config/laravelpagseguro.php] To [/config/laravelpagseguro.php]
 ```
 
 ## Ajuste da configuração
