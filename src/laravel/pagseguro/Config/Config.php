@@ -42,7 +42,7 @@ class Config
         }
         $data = static::$data;
         if ($platform->hasPersonalConfig()) {
-            $data = $platform->getConfigByKey('laravelpagseguro');
+            $data = $platform->getConfigByKey('laravel-pagseguro');
         }
         if (is_null($data)) {
             $data = include(__DIR__ . '/application-config.php');
@@ -64,7 +64,7 @@ class Config
             static::$data[$key] = $value;
             if ($platform->hasPersonalConfig()) {
                 $key = implode('.', (array) $key);
-                \Config::set('laravelpagseguro.' . $key, $value);
+                \Config::set('laravel-pagseguro.' . $key, $value);
             }
         }
     }

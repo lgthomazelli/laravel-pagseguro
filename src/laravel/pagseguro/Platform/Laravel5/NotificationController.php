@@ -33,8 +33,8 @@ class NotificationController extends Controller
             return;
         }
         $credential = new PagSeguroCredentials(
-            \config('laravelpagseguro.credentials.token'),
-            \config('laravelpagseguro.credentials.email')
+            \config('laravel-pagseguro.credentials.token'),
+            \config('laravel-pagseguro.credentials.email')
         );
         $notification = new Notification($code, $type);
         $info = $notification->check($credential);
@@ -49,7 +49,7 @@ class NotificationController extends Controller
     private function notify($info)
     {
         $isCallable = false;
-        $callback = \config('laravelpagseguro.routes.notification.callback');
+        $callback = \config('laravel-pagseguro.routes.notification.callback');
         if (!is_null($callback) && !($isCallable = is_callable($callback))) {
             throw new \RuntimeException('Callback is a not valid PHP callback');
         }
@@ -76,8 +76,8 @@ class NotificationController extends Controller
         
         if ($callback === 'default') {
             return new PagSeguroCredentials(
-                \config('laravelpagseguro.credentials.token'),
-                \config('laravelpagseguro.credentials.email')
+                \config('laravel-pagseguro.credentials.token'),
+                \config('laravel-pagseguro.credentials.email')
             );
         }
         
