@@ -13,6 +13,10 @@
 
 </p>
 
+Esta é uma versão baseada no package original e mantendo a mesma documentação.
+Nesta versão foi implementado o recebimento de notificações via PIX.
+---
+
 O laravel-pagseguro consome a API do PagSeguro e prove uma forma 
 simples de gerar o pagamento, e notificar sobre as suas transações.
 

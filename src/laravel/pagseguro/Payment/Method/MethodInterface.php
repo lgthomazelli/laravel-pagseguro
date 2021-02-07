@@ -20,7 +20,8 @@ interface MethodInterface
     const TYPE_TRANSFER = 3;
     const TYPE_PS_CREDIT = 4;
     const TYPE_OI_PAGGO = 5;
-    const TYPE_DEPOSIT_ACCOUNT = 6;
+    const TYPE_DEPOSIT_ACCOUNT = 7;
+    const TYPE_PIX = 11;
 
     /**
      * Get Type Code

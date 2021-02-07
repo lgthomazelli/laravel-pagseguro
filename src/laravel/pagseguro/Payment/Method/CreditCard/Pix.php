@@ -15,7 +15,7 @@ use laravel\pagseguro\Payment\Method\MethodAbstract;
  *
  * @copyright  Laravel\PagSeguro
  */
-class CreditCard extends MethodAbstract implements CreditCardInterface
+class Pix extends MethodAbstract implements PixInterface
 {
 
     /**
